@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.LanguageCode | default " en" }}">
 {{ partial "head.html" . }}
 
-<body class="{{ .Kind }} {{ anchorize .URL }} {{ .Section }}">
+<body class="{{ .Kind }} {{ anchorize .RelPermalink }} {{ .Section }}">
 
 {{ readFile "themes/devfest-theme-hugo/static/icons.svg" | safeHTML }}
 
